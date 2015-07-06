@@ -1,0 +1,93 @@
+﻿
+.pieceGrise {
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.Reine-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+}
+
+.Roi-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -96.66px 0;
+}
+
+.Fou-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -193.32px 0;
+}
+
+.Cavalier-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -290px 0;
+}
+
+
+.Tour-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -386.64px 0;
+}
+
+.Pion-Blanc {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -483.3px 0;
+}
+
+/*LES PIECES NOIRES*/
+
+.Reine-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: 0 -96.5px;
+}
+
+.Roi-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -96.66px -96.5px;
+}
+
+.Fou-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -193.32px -96.5px;
+}
+
+.Cavalier-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -290px -96.5px;
+}
+
+
+.Tour-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -386.64px -96.5px;
+}
+
+.Pion-Noir {
+    width: 96.66px;
+    height: 96.5px;
+    background: url("../Images/Pieces.png") 0 0 no-repeat;
+    background-position: -483.3px -96.5px;
+}

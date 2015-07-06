@@ -1,0 +1,36 @@
+﻿
+#Plateau {
+    width: 896px;
+    height: 896px;
+    float: left;
+    padding-top: 64px;
+    background-image: url(../Images/bodures.jpg);
+}
+
+
+#messages {
+    float: left;
+    height: 400px;
+    max-height: 800px;
+}
+
+#Echiquier {
+    border-collapse: collapse;
+    background: black;
+    border: 3px white solid;
+    margin: auto;
+}
+
+    #Echiquier td {
+        width: 96px;
+        height: 96px;
+    }
+
+    #Echiquier tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+        background-image: url(../Images/CaseNoire.jpg);
+    }
+
+    #Echiquier tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even) {
+        background: white;
+        background-image: url(../Images/CaseBlanche.jpg);
+    }

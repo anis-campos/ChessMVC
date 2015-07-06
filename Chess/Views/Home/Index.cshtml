@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Jeu d'échec";
+
+}
+
+@section AddCss{
+    <link href="~/Content/CSS/Echiquier.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CSS/hover.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CSS/Pieces.css" rel="stylesheet" />
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/bundles/bootstrapcss")
+
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrapjs")
+    <script src="~/Scripts/Custom/Echiquier.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            initChessBoard();
+            //disableJeu("NOIR", "disable");
+        });
+    </script>
+}
+
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+
+    <div class="col-lg-6">
+        <div id="Plateau">
+            <table id="Echiquier">
+                @{
+                    for (var y = 0; y < 8; y++)
+                    {
+                    <tr data-y="@y">
+                        @{
+                        for (var x = 0; x < 8; x++)
+                        {
+                            <td data-x="@x" class="case">
+                                <div></div>
+                            </td>
+                        }
+                        }
+                    </tr>
+
+                    }
+                }
+
+            </table>
+
+        </div>
+    </div>
+
+    <div class="col-lg-5">
+
+        <form>
+            <textarea id="messages" class="form-control" placeholder="Textarea" readonly="readonly"></textarea>
+        </form>
+    </div>
+
+
+
+
+</div>
+
+
